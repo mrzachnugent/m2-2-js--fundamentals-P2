@@ -13,7 +13,20 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
+  const reducer = (acc, cV) => acc + cV;
+  let sumGrades = grades.reduce(reducer);
+  let avg = sumGrades / grades.length;
+  if (avg < 60) {
+    return "F";
+  } else if (avg < 70) {
+    return "D";
+  } else if (avg < 80) {
+    return "C";
+  } else if (avg < 90) {
+    return "B";
+  } else {
+    return "A";
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

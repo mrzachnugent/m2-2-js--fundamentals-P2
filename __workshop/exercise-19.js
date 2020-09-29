@@ -15,8 +15,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function filter(arr, func) {
-  // arr is an array and f is a function
-  // func takes one argument and returns a boolean (true or false)
+  let arrLen = arr.length;
+  let newArr = [];
+  for (let i = 0; i < arrLen; i++) {
+    if (func(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

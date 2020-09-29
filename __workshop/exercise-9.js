@@ -9,7 +9,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greetLong(list) {
-  // list is an array of strings
+  let over4 = list.filter((list) => list.length > 3);
+  let final = over4.map((over4) => `Hello ${over4}`);
+  return final;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

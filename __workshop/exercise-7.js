@@ -8,7 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  // list is an array of strings
+  return list.filter((keepLong) => keepLong.length > 5);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

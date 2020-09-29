@@ -9,7 +9,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function characterCount(string) {
-  // complete the function
+  return string.split("").length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

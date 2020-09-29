@@ -7,8 +7,10 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+const isAbove4 = (currentValue) => currentValue.length > 4;
+
 function allLong(list) {
-  // list is an array of strings
+  return list.every(isAbove4);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

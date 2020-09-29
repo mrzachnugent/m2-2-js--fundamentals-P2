@@ -6,7 +6,10 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  // grades is an array of numbers
+  const reducer = (acc, cV) => acc + cV;
+  let totalSum = grades.reduce(reducer);
+  let avg = totalSum / grades.length;
+  return Math.round(avg);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

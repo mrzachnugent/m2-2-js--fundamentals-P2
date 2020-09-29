@@ -11,8 +11,26 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+  let numArr;
+  let emptyArr = [];
+  for (let oG = num1; oG <= num2; oG++) {
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+    numArr = oG
+      .toString()
+      .split("")
+      .map((x) => x ** 3)
+      .reduce(reducer);
+    emptyArr.push(numArr);
+  }
+  let ans = emptyArr.filter((num, index) => {
+    if (num == index + num1) {
+      return true;
+    }
+  });
+  return ans;
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

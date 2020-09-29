@@ -20,7 +20,13 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function map(arr, func) {
-  // arr is an array and func is a function
+  let arrLen = arr.length;
+  let newArr = [];
+  for (let i = 0; i < arrLen; i++) {
+    let newEl = func(arr[i]);
+    newArr.push(newEl);
+  }
+  return newArr;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

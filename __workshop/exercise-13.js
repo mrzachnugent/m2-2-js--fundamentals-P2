@@ -6,8 +6,16 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countBs(str) {
-  // str is a string
+  let string = str;
+  let allBString = string.match(/B/g);
+  if (allBString === null) {
+    return 0;
+  } else {
+    let count = allBString.length;
+    return count;
+  }
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

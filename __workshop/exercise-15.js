@@ -8,7 +8,15 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
-  // arr is an array of values of any type
+  return arr.filter(function (el, index) {
+    let first = arr.indexOf(el);
+    let last = arr.lastIndexOf(el);
+    if (first !== last) {
+      return false;
+    }
+
+    return true;
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

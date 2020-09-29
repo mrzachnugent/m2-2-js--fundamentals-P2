@@ -10,7 +10,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+  //for every element in array, remove string if element is equal string
+  let removeItem = string;
+  let stringIndex = array.indexOf(removeItem);
+  array.splice(stringIndex, 1);
+  return array;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
